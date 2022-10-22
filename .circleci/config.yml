@@ -51,7 +51,7 @@ jobs:
     steps:
       - node/install:
           node-version: '14.15' 
-      - eb/setup
+      - aws-elastic-beanstalk/setup
       - aws-cli/setup
       - checkout
       - run:
